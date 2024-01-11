@@ -12,7 +12,7 @@ function FetchItems() {
     const controller = new AbortController();
     const signal = controller.signal;
     // dispatch(statusActions.markFetchingStarted());
-    fetch("http://localhost:8081/api/auth/items", { signal })
+    fetch("https://myntra-clone-b6q5.onrender.com/api/auth/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         // dispatch(statusActions.markFetchDone());
